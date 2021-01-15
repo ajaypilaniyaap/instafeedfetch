@@ -8,7 +8,7 @@ let Q = require("q");
 class InstaFetch{
     constructor(instaTools) {
         this.instaTools = instaTools;
-        this.API_KEY = '1565409091:AAFWDvPbbfTb4SBlzlDaapSZaPWJ34wRuO4';
+        this.API_KEY = process.env.TELEGRAM_TOKEN;
         this.bot = new Telegraf(this.API_KEY);
     }
     launch() {
