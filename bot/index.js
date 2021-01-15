@@ -18,6 +18,11 @@ class InstaFetch{
     addWelcomeText() {
         this.bot.start((ctx) => ctx.reply('Welcome to Insta Fetch. Please enter a username of instagram and we will fetch the last 10 posts of it.')); // display Welcome text when we start bot
     }
+    addPing() {
+        this.bot.hears('Ping', (ctx) => ctx.reply('Pong'));
+        this.bot.hears('ping', (ctx) => ctx.reply('Pong'));
+        this.bot.hears('PING', (ctx) => ctx.reply('Pong'));
+    }
     addInstaCommand() {
         let self = this;
         this.bot.on('text', (ctx) => {

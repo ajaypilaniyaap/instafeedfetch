@@ -46,6 +46,7 @@ let instaBot = new instaBotClass(new instaToolsClass());
 instaBot.instaTools.login();
 instaBot.addWelcomeText();
 instaBot.addInstaCommand();
+instaBot.addPing();
 instaBot.launch();
 
 module.exports = app;
